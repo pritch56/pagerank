@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PageRank Results</title>
+</head>
+<body>
+    <h2>PageRank Results</h2>
+    <ul>
+      {% for page, score in pagerank.items() %}
+        <li>{{ page }}: {{ "%.4f" | format(score) }}</li>
+      {% endfor %}
+    </ul>
+    <a href="/">Upload more</a>
+</body>
+</html>
